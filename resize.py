@@ -54,7 +54,8 @@ def main():
                 path = path[1:]
                 for f in os.listdir(path): resize(path+'/'+f)
                 print('Among all files there are, '+str(sucess)+' success and '+str(fail)+' failure')
-            elif: print('Not correct usage, use -h for usage recommendation' )
+            else:
+                print('Not correct usage, use -h for usage recommendation' )
         elif len(array) == 2:
             if not os.path.exists(array[1]) : print('Please enter the path to file, use -h for usage recommandations')
             else: resize(array[1])
